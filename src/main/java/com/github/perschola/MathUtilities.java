@@ -56,8 +56,7 @@ public class MathUtilities {
      */
     public Double half(Integer number) {
 
-        Double result = (double) (number / 2);
-        return Math.floor(result);
+        return (number / 2.0);
     }
 
     /**
@@ -67,7 +66,12 @@ public class MathUtilities {
      * @return true if the number is odd, false if it is even
      */
     public Boolean isOdd(Integer number) {
-        return null;
+
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -78,7 +82,8 @@ public class MathUtilities {
      * @return the result of the number multiply by itself
      */
     public Integer square(Integer number) {
-        return null;
+
+        return number * number;
     }
 
 }
