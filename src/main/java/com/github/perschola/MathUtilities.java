@@ -12,7 +12,16 @@ public class MathUtilities {
      * @return the factorial of the number
      */
     public Integer factorial(Integer number) {
-        return null;
+
+        int output = number;
+
+        if (number == 0 || number == 1) {
+            return 1;
+        }
+        for (int i = number; i > 2; i--) {
+            output *= (i - 1);
+        }
+        return output;
     }
 
     /**
@@ -23,7 +32,8 @@ public class MathUtilities {
      * @return the sum of the two numbers
      */
     public Integer add(Integer baseValue, Integer valueToAdd) {
-        return null;
+
+        return (baseValue + valueToAdd);
     }
 
     /**
@@ -34,7 +44,8 @@ public class MathUtilities {
      * @return the sum of the two numbers
      */
     public Double add(Double baseValue, Double valueToAdd) {
-        return null;
+
+        return (baseValue + valueToAdd);
     }
 
     /**
@@ -44,7 +55,9 @@ public class MathUtilities {
      * @return the half of the number in double
      */
     public Double half(Integer number) {
-        return null;
+
+        Double result = (double) (number / 2);
+        return Math.floor(result);
     }
 
     /**
